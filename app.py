@@ -17,59 +17,59 @@ from streamlit_extras.echo_expander import echo_expander
 st.set_page_config(page_title="Nick Sofianakos",page_icon = "ice_hockey_stick_and_puck", layout="wide", initial_sidebar_state="auto")
 
 #Including style.css file 
-# st.markdown('<style>' + open('style.css').read() + '<style>', unsafe_allow_html=True)
+st.markdown('<style>' + open('style.css').read() + '<style>', unsafe_allow_html=True)
 
-# def load_lottieurl(url):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
-# def render_lottie(url, width, height):
-#     lottie_html = f"""
-#     <html>
-#     <head>
-#         <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
-#     </head>
-#     <body>
-#         <div id="lottie-container" style="width: {width}; height: {height};"></div>
-#         <script>
-#             var animation = lottie.loadAnimation({{
-#                 container: document.getElementById('lottie-container'),
-#                 renderer: 'svg',
-#                 loop: true,
-#                 autoplay: true,
-#                 path: '{url}'
-#             }});
-#             animation.setRendererSettings({{
-#                 preserveAspectRatio: 'xMidYMid slice',
-#                 clearCanvas: true,
-#                 progressiveLoad: false,
-#                 hideOnTransparent: true
-#             }});
-#         </script>
-#     </body>
-#     </html>
-#     """
-#     return lottie_html
+def render_lottie(url, width, height):
+    lottie_html = f"""
+    <html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+    </head>
+    <body>
+        <div id="lottie-container" style="width: {width}; height: {height};"></div>
+        <script>
+            var animation = lottie.loadAnimation({{
+                container: document.getElementById('lottie-container'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '{url}'
+            }});
+            animation.setRendererSettings({{
+                preserveAspectRatio: 'xMidYMid slice',
+                clearCanvas: true,
+                progressiveLoad: false,
+                hideOnTransparent: true
+            }});
+        </script>
+    </body>
+    </html>
+    """
+    return lottie_html
 
-# Use local CSS
-# def local_css(file_name):
-#     with open(file_name) as f:
-#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+#Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# local_css("style/style.css")
+local_css("style/style.css")
 
-# footer = """
-# footer{
-#     visibility:visible;
-# }
-# footer:after{
-#     content:'Copyright © 2023 Harry Chang';
-#     position:relative;
-#     color:black;
-# }
-# """
+footer = """
+footer{
+    visibility:visible;
+}
+footer:after{
+    content:'Copyright © 2023 Harry Chang';
+    position:relative;
+    color:black;
+}
+"""
 #Image for about me
 img_me=Image.open("images/Me.jpg")
 img_VGK=Image.open("images/NickVGK.jpg")
@@ -77,7 +77,7 @@ img_JW=Image.open("images/Jaywrightpic.jpg")
 
 
 #####################
-# Custom function for printing text
+#Custom function for printing text
 def txt(a, b):
   col1, col2 = st.columns([4,1])
   with col1:
@@ -125,10 +125,6 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
     )
 add_bg_from_local('bg2.jpg') 
-
-
-
-
 
 
 
