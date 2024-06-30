@@ -175,7 +175,7 @@ with st.sidebar:
     
     choose = option_menu(
                         "Nick Sofianakos", 
-                        ["About Me", "Experience", "Technical Skills", "Education", "Projects", "Competitions"],
+                        ["About Me", "Experience", "Technical Skills", "Education", "Projects", "Awards & Certifications"],
                          icons=['person fill',  'clock history', 'tools', 'book half', 'clipboard', 'trophy fill', ],
                          menu_icon="mortarboard", 
                          default_index=0,
@@ -530,4 +530,23 @@ elif choose == "Education":
     #             st.image(img_NovaU)
     #         with right:
     #             st.empty()
+elif choose == "Projects":
+    st.header("Projects")
+    st.subheader("Coming Soon")
 
+
+
+elif choose == "Awards & Certifications":
+    with st.container():
+            left_column, middle_column, right_column = st.columns((1,0.2,0.5))
+            with left_column:
+                st.header("Awards and Certifications")
+                st.write(":trophy: Villanova University Deans List: Fall 2020, Spring 2021, Spring 2022, Fall 2022, Spring 2023, Fall 2023, Spring 2024 ")
+                st.write(":trophy: Syracuse University 2023 Basketball Analytics Competition Overall Winner ")
+                st.write(":trophy: Syracuse University 2024 Basketball Analytics Competition Room Winner (Top 3) ")
+                st.write(":trophy: Syracuse University 2024 Football Analytics Competition Room Winner (Top 4)")
+                st.write(":trophy: Villanova Athletics Leadership Summit Certification")
+            with middle_column:
+                st.empty()
+            # with right_column:
+            #     st.image(img_me)
