@@ -211,13 +211,14 @@ if choose == "About Me":
         left_column, middle_column, right_column = st.columns((1,0.2,0.5))
         with left_column:
             st.header("About Me")
-            st.write("Email: nsofianakos@gmail.com")
-            st.write("Cell Number: 732-397-0761")
             st.subheader("Aspiring Data Analyst/Data Scientist/Consultant")
             st.write("👋🏻 Hi, I'm Nick! I'm a recent 2024 graduate of Villanova University. I graduated magna cum laude with a bachelor of science in computer engineering, and also received minors in both statistics and computer science.")
-            st.write("In my freetime, I like to exercise in the gym, run, and play sports (especially hockey). ")
-            st.write("👨🏼‍💻 Academic interests: Data Visualization, Dashboarding, Data Analysis, Natural Language Processing")
+            st.write(" :runner: In my freetime, I like to exercise in the gym, run, listen to music and play/watch hockey. ")
+            st.write("👨🏼‍💻 Interests: Data Visualization, Dashboarding, Data Analysis, Natural Language Processing")
             st.write("💭 Ideal Career Paths: Data Analyst, Data Scientist, Artificial Intelligence Engineer, Technology Consultant, Product Manager")
+            st.subheader("Contact Me!")
+            st.write("Email: nsofianakos@gmail.com")
+            st.write("Cell Number: 732-397-0761")
            # st.write("📄 [Resume (1 page)](https://drive.google.com/file/d/164EEVH6BmvC89q2M4WsBNF1JyddDAbNY/view?usp=sharing)")
         with middle_column:
             st.empty()
