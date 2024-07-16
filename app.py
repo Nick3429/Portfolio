@@ -88,6 +88,9 @@ img_NovaLogo=Image.open("images/Nova.png")
 img_ALJ1=Image.open("images/ALJ.png")
 img_ALJ2=Image.open("images/ALJ (1).png")
 
+#Images for Projects
+img_NHLdash=Image.open("images/NHL_Logo.png")
+
 #####################
 #Custom function for printing text
 def txt(a, b):
@@ -213,8 +216,8 @@ if choose == "About Me":
             st.header("About Me")
             st.subheader("Aspiring Data Analyst/Data Scientist/Consultant")
             st.write("👋🏻 Hi, I'm Nick! I'm a recent 2024 graduate of Villanova University. I graduated magna cum laude with a bachelor of science in computer engineering, and also received minors in both statistics and computer science.")
-            st.write(" :runner: In my freetime, I like to exercise in the gym, run, listen to music and play/watch hockey. ")
-            st.write("👨🏼‍💻 Interests: Data Visualization, Dashboarding, Data Analysis, Natural Language Processing")
+            st.write(" :runner: In my freetime, I like to exercise in the gym, run, listen to music and play/watch sports (especially hockey!). ")
+            st.write("👨🏼‍💻 Interests: Data Visualization, Dashboarding, Data Analysis, Statistical Modeling, Natural Language Processing")
             st.write("💭 Ideal Career Paths: Data Analyst, Data Scientist, Artificial Intelligence Engineer, Technology Consultant, Product Manager")
             st.subheader("Contact Me!")
             st.write("Email: nsofianakos@gmail.com")
@@ -354,186 +357,22 @@ elif choose == "Education":
                 - National Honors Society
                 - Robotics Club
                 """)
-    # elif selected == "Modules":
-    #     st.subheader("Modules")
-    #     st.write("*List of modules taken at National University of Singapore*")
-    #     with st.container():
-    #         sem1, mid, sem2 = st.columns((1,0.1,1))
-    #         with sem1:
-    #             st.write("**Academic Year 2019/20 Semester 1**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |AY1130| Human Anatomy and Physiology I       |4 MCs|
-    #             |GER1000| Quantitative Reasoning              |4 MCs|
-    #             |PR1110A| Foundations for Medicinal Chemistry |4 MCs|
-    #             |PR1111A|Pharmaceutical Biochemistry          |4 MCs|
-    #             |ST1232| Statistics for Life Sciences         |4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **20 Modular Credits (MCs)**
-    #             """)
-    #         with mid:
-    #             st.empty()
-    #         with sem2:
-    #             st.write("**Academic Year 2020/21 Semester 1**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |CS1010S|Programming Methodology|4 MCs|
-    #             |DSA1101|Introduction to Data Science|4 MCs|
-    #             |GER1000|Quantitative Reasoning|4 MCs|
-    #             |MA1102R|Calculus|4 MCs|
-    #             |SP1541|Exploring Science Communication Through Popular Science|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **20 Modular Credits (MCs)**
-    #             """)
-    #     with st.container():
-    #         sem1, mid, sem2 = st.columns((1,0.1,1))
-    #         with sem1:
-    #             st.write("**Academic Year 2020/21 Semester 2**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |CFG1002|Career Catalyst|2 MCs|
-    #             |EC1301|Principles of Economics|4 MCs|
-    #             |GEQ1000|Asking Questions|4 MCs|
-    #             |GES1010|Nation-Building in Singapore|4 MCs|
-    #             |GET1030|Computers and the Humanities|4 MCs|
-    #             |MA1101R|Linear Algebra I|4 MCs|
-    #             |ST2131|Probability|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **26 Modular Credits (MCs)**
-    #             """)
-    #         with mid:
-    #             st.empty()
-    #         with sem2:
-    #             st.write("**Academic Year 2020/21 Special Term (Part II)**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |CS2040|Data Structures and Algorithms|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **4 Modular Credits (MCs)**
-    #             """)
-    #     with st.container():
-    #         sem1, mid, sem2 = st.columns((1,0.1,1))
-    #         with sem1:
-    #             st.write("**Academic Year 2021/22 Semester 1**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |DSA2102|Essential Data Analytics Tools: Numerical Computation|4 MCs|
-    #             |EC2101|Microeconomic Analysis I|4 MCs|
-    #             |EC2102|Macroeconomic Analysis I|4 MCs|
-    #             |EC2204|Financial Accounting for Economists|4 MCs|
-    #             |EC3305|Programming Tools for Economics|4 MCs|
-    #             |GEH1049|Public Health in Action|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **24 Modular Credits (MCs)**
-    #             """)
-    #         with mid:
-    #             st.empty()
-    #         with sem2:
-    #             st.write("**Academic Year 2021/22 Semester 2**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |ALS1010|Learning to Learn Better|2 MCs|
-    #             |DSA2101|Essential Data Analytics Tools: Data Visualization|4 MCs|
-    #             |GES1037|A History of Singapore in Ten Objects|4 MCs|
-    #             |IS1103|Ethics in Computing|4 MCs|
-    #             |IT2002|Database Technology and Management|4 MCs|
-    #             |MA2104|Multivariable Calculus|4 MCs|
-    #             |ST2132|Mathematical Statistics|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **26 Modular Credits (MCs)**
-    #             """)
-    #     with st.container():
-    #         sem1, mid, sem2 = st.columns((1,0.1,1))
-    #         with sem1:
-    #             st.write("**Academic Year 2022/23 Semester 1**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |CFG1003|Financial Wellbeing - Introduction|0 MCs|
-    #             |CS3244|Machine Learning|4 MCs|
-    #             |DSA3101|Data Science in Practice|4 MCs|
-    #             |DSA3102|Essential Data Analytics Tools: Convex Optimization|4 MCs|
-    #             |ST3131|Regression Analysis|4 MCs|
-    #             |ST3248|Statistical Learning I|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **20 Modular Credits (MCs)**
-    #             """)
-    #         with mid:
-    #             st.empty()
-    #         with sem2:
-    #             st.write("**Academic Year 2022/23 Semester 2**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |DSA4212|Optimization for Large-Scale Data-Driven Inference|4 MCs|
-    #             |LSM1301|General Biology|4 MCs|
-    #             |ST4248|Statistical Learning II|4 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **12 Modular Credits (MCs)**
-    #             """)
-    #     with st.container():
-    #         sem1, mid, sem2 = st.columns((1,0.1,1))
-    #         with sem1:
-    #             st.write("**Academic Year 2023/24 Semester 1**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |CS4225|Big Data Systems for Data Science|4 MCs|
-    #             |DSA4199|Applied Project in Data Science and Analytics|8 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: **12 Modular Credits (MCs)**
-    #             """)
-    #         with mid:
-    #             st.empty()
-    #         with sem2:
-    #             st.write("**Academic Year 2022/23 Semester 2 (Expected)**")
-    #             st.markdown("""
-    #             |Code|Module Title                       |Workload|
-    #             |--------|--------------------------------------|---------|
-    #             |DSA426X|Sense-Making Case Analysis|4 MCs|
-    #             |ST4234|Bayesian Statistics|4 MCs|
-    #             |DSA4199|Applied Project in Data Science and Analytics|8 MCs|
-    #             """)
-    #             st.write("")
-    #             st.markdown("""
-    #             Total Workload for Semester: *16 Modular Credits (MCs)**
-    #             """)
-    #     with st.container():
-    #         left, mid, right = st.columns((0.1,1,0.1))
-    #         with left:
-    #             st.empty()
-    #         with mid:
-    #             st.write("**Graduation Requirements**")
-    #             st.image(img_NovaU)
-    #         with right:
-    #             st.empty()
+
 elif choose == "Projects":
     st.header("Projects")
-    st.subheader("Coming Soon")
+    with st.container():
+        text_column, image_column = st.columns((3,1))
+        with text_column:
+            st.subheader("NHL Team Statistics Dashboard")
+            st.write("*Project for personal team dive into the performance of teams!*")
+            st.markdown("""
+            - Utilized team statistical data from Natural Stat Trick
+            - Display teams performance in terms of different metrics in a variety of different situations and scores
+            - Graphs to compare the expected goals for (xGF) and expected goals against (xGA) built in R leveraging ggPlot2
+            """)
+            mention(label="Github Repo", icon="github", url="https://github.com/Nick3429/NHLDashboard",)
+        with image_column:
+            st.image(img_NHLdash)
 
 
 
