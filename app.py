@@ -421,6 +421,7 @@ elif choose == "Projects":
             - Graphs to compare the expected goals for (xGF) and expected goals against (xGA) built in R leveraging ggPlot2
             """)
             mention(label="Github Repo", icon="github", url="https://github.com/Nick3429/NHLDashboard",)
+            mention(label="Streamlit Dashboard", icon="streamlit", url="https://nhldashboard.streamlit.app/",)
         with image_column:
             st.image(img_NHLdash)
 
