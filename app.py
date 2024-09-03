@@ -76,6 +76,7 @@ img_VGK=Image.open("images/NickVGK.jpg")
 img_JW=Image.open("images/Jaywrightpic.jpg")
 
 #Images for experience
+img_STLBlues=Image.open("images/STLBlues.png")
 img_EY=Image.open("images/EYLogo.png")
 img_CBB=Image.open("images/CBB.png")
 img_ECI=Image.open("images/ECILogo.png")
@@ -90,6 +91,8 @@ img_ALJ2=Image.open("images/ALJ (1).png")
 
 #Images for Projects
 img_NHLdash=Image.open("images/NHL_Logo.png")
+img_NHLFL=Image.open("images/TOIBestOveralltwohund.PNG")
+img_NHLxG=Image.open("images/ROCCurve.png")
 
 #####################
 #Custom function for printing text
@@ -235,6 +238,22 @@ elif choose == "Experience":
     with st.container():
         image_column, text_column = st.columns((1,5))
         with image_column:
+            st.write(" ")
+            st.write(" ")
+            st.write(" ")
+            st.image(img_STLBlues)
+        with text_column:
+            st.subheader("Analytics Intern, [St.Louis Blues](https://www.nhl.com/blues/)")
+            st.write("*Summer 2024*")
+            st.markdown("""
+            Enhanced the St. Louis Blues’ free agency dashboard by scraping player salary data from CapFriendly, ensuring prospective signings adhered to team salary cap constraints. Created a comprehensive cap management tool using Streamlit, enabling users to construct, save, and evaluate team lineups for salary cap compliance 
+
+            
+            `Python`  `Excel` `Selenium` `Pandas` `Numpy` `BeautifulSoup4` `Streamlit`
+            """)
+    with st.container():
+        image_column, text_column = st.columns((1,5))
+        with image_column:
             st.image(img_EY)
         with text_column:
             st.subheader("Technology Consulting Intern, [EY](https://www.ey.com/en_us)")
@@ -309,7 +328,7 @@ elif choose == "Technical Skills":
     txt3("Cloud Platforms", "`Google Cloud Platform`, `Amazon Web Services`, `Heroku`, `Streamlit Cloud`")
     txt3("Version Control", "`Git`")
     txt3("Design and Front-end Development", "`HTML`, `CSS`, `Streamlit`, `Wordpress`, `Bootstrap`, `React (Work in Progress)`")
-    txt3("Data Science Techniques", "`Regression`, `XGBoost`, `Random Forest`, `Decison Trees`")
+    txt3("Data Science Techniques", "`Linear Regression`, `Logistic Regression`, `XGBoost`, `Random Forest`, `Decison Trees`")
     txt3("Machine Learning Frameworks", "`Numpy`, `Pandas`, `Scikit-Learn`")
     txt3("Task Management Tools", "`Slack`, `Jira`")
     txt3("Technologies", "`ChatGPT`, `Heroku`, `Microsoft Word`, `Microsoft PowerPoint`, `Google Docs`, `Google Slides`")
@@ -360,6 +379,37 @@ elif choose == "Education":
 
 elif choose == "Projects":
     st.header("Projects")
+    with st.container():
+        text_column, image_column = st.columns((3,1))
+        with text_column:
+            st.subheader("NHL Forward Line Rankings")
+            st.write("*Project to rank the best offensive, defensive, and overall forward lines in the NHL during the 2023-24 regular season!*")
+            st.markdown("""
+            - Utilized play by play data from the python scraper package hockey_scraper and time on ice data from MoneyPuck.com
+            - xG model built as an xgboost model with hyperparameters optimized through grid search
+            - Display three different result tables showing the best:
+                        1)Offensive lines in hockey by xG For
+                        2)Defensive lines in hockey by xG Against
+                        3)Overall lines in hockey by xG% 
+            - Completed in Python leveraging the Pandas, Numpy, HockeyScraper, xgboost, and scikit-learn packages
+            """)
+            mention(label="Github Repo", icon="github", url="https://github.com/Nick3429/NHL-Forward-Lines-Ranking",)
+        with image_column:
+            st.image(img_NHLFL)
+    with st.container():
+        text_column, image_column = st.columns((3,1))
+        with text_column:
+            st.subheader("NHL xG Model")
+            st.write("*Project to build an xG Model and look at the top 15 players in the NHL during the 2023-24 regular season by expected goals (xG)!*")
+            st.markdown("""
+            - Utilized play by play data  MoneyPuck.com
+            - Developed and implemented Logistic Regression and XGBoost models to predict xG for NHL players using 2023-24 NHL regular season shot data, achieving an AUC Score of 0.77 for the XGBoost Model and 0.75 for the Logistic Regression model 
+            - Completed in Python leveraging the Pandas, Numpy, xgboost, and scikit-learn packages
+            """)
+            mention(label="Github Repo", icon="github", url="https://github.com/Nick3429/NHLxG",)
+            mention(label="Medium Article", icon="", url="https://medium.com/@nsofianakos/nhl-expected-goals-xg-model-39bd2edba932",)
+        with image_column:
+            st.image(img_NHLxG)
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
