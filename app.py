@@ -11,6 +11,7 @@ from streamlit_extras.mention import mention
 from streamlit_extras.app_logo import add_logo
 #from bs4 import BeautifulSoup
 from streamlit_extras.echo_expander import echo_expander
+import os
 
 
 #Set Page Title
@@ -70,29 +71,56 @@ footer:after{
     color:black;
 }
 """
+
+# Get the directory of the current script
+current_dir = os.path.dirname(__file__)
+
+#Define the relative paths to the images
+img_me_path = os.path.join(current_dir, "images", "Me.jpg")
+img_VGK_path = os.path.join(current_dir, "images", "NickVGK.jpg")
+img_JW_path = os.path.join(current_dir, "images", "Jaywrightpic.jpg")
+
+img_STLBlues_path = os.path.join(current_dir, "images", "STLBlues.png")
+img_EY_path = os.path.join(current_dir, "images", "EYLogo.png")
+img_CBB_path = os.path.join(current_dir, "images", "CBB.png")
+img_ECI_path = os.path.join(current_dir, "images", "ECILogo.png")
+img_FIN_path = os.path.join(current_dir, "images", "FinTechLogo.png")
+img_FIN2_path = os.path.join(current_dir, "images", "FinTechLogo.jpg")
+
+img_NovaU_path = os.path.join(current_dir, "images", "NovaU.png")
+img_NovaLogo_path = os.path.join(current_dir, "images", "Nova.png")
+img_ALJ1_path = os.path.join(current_dir, "images", "ALJ.png")
+img_ALJ2_path = os.path.join(current_dir, "images", "ALJ (1).png")
+
+img_NHLdash_path = os.path.join(current_dir, "images", "NHL_Logo.png")
+img_NHLFL_path = os.path.join(current_dir, "images", "StreamlitFL.PNG")
+img_NHLxG_path = os.path.join(current_dir, "images", "ROCCurve.png")
+
+
+
 #Images for about me
-img_me=Image.open("images/Me.jpg")
-img_VGK=Image.open("images/NickVGK.jpg")
-img_JW=Image.open("images/Jaywrightpic.jpg")
+img_me=Image.open(img_me_path)
+img_VGK=Image.open(img_VGK_path)
+img_JW=Image.open(img_JW_path)
 
 #Images for experience
-img_STLBlues=Image.open("images/STLBlues.png")
-img_EY=Image.open("images/EYLogo.png")
-img_CBB=Image.open("images/CBB.png")
-img_ECI=Image.open("images/ECILogo.png")
-img_FIN=Image.open("images/FinTechLogo.png")
-img_FIN2=Image.open("images/FinTechLogo.jpg")
+img_STLBlues=Image.open(img_STLBlues_path)
+img_EY=Image.open(img_EY_path)
+img_CBB=Image.open(img_CBB_path)
+img_ECI=Image.open(img_ECI_path)
+img_FIN=Image.open(img_FIN_path)
+img_FIN2=Image.open(img_FIN2_path)
 
 #Images for Education
-img_NovaU=Image.open("images/NovaU.png")
-img_NovaLogo=Image.open("images/Nova.png")
-img_ALJ1=Image.open("images/ALJ.png")
-img_ALJ2=Image.open("images/ALJ (1).png")
+img_NovaU=Image.open(img_NovaU_path)
+img_NovaLogo=Image.open(img_NovaLogo_path)
+img_ALJ1=Image.open(img_ALJ1_path )
+img_ALJ2=Image.open(img_ALJ2_path)
 
 #Images for Projects
-img_NHLdash=Image.open("images/NHL_Logo.png")
-img_NHLFL=Image.open("images/StreamlitFL.PNG")
-img_NHLxG=Image.open("images/ROCCurve.png")
+img_NHLdash=Image.open(img_NHLdash_path)
+img_NHLFL=Image.open(img_NHLFL_path)
+img_NHLxG=Image.open(img_NHLxG_path)
 
 #####################
 #Custom function for printing text
