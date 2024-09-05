@@ -93,7 +93,7 @@ img_ALJ1_path = os.path.join(current_dir, "images", "ALJ.png")
 img_ALJ2_path = os.path.join(current_dir, "images", "ALJ (1).png")
 
 img_NHLdash_path = os.path.join(current_dir, "images", "NHL_Logo.png")
-img_NHLFL_path = os.path.join(current_dir, "images", "StreamlitFL.PNG")
+img_NHLFL_path = os.path.join(current_dir, "images", "StreamlitFL.png")
 img_NHLxG_path = os.path.join(current_dir, "images", "ROCCurve.png")
 
 
