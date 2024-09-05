@@ -91,7 +91,7 @@ img_ALJ2=Image.open("images/ALJ (1).png")
 
 #Images for Projects
 img_NHLdash=Image.open("images/NHL_Logo.png")
-img_NHLFL=Image.open("images/TOIBestOveralltwohund.PNG")
+img_NHLFL=Image.open("images/StreamlitFL.PNG")
 img_NHLxG=Image.open("images/ROCCurve.png")
 
 #####################
@@ -394,6 +394,7 @@ elif choose == "Projects":
             - Completed in Python leveraging the Pandas, Numpy, HockeyScraper, xgboost, and scikit-learn packages
             """)
             mention(label="Github Repo", icon="github", url="https://github.com/Nick3429/NHL-Forward-Lines-Ranking",)
+            mention(label="Medium Article", icon="", url="https://medium.com/@nsofianakos/best-nhl-forward-lines-49e621b79486",)
         with image_column:
             st.image(img_NHLFL)
     with st.container():
