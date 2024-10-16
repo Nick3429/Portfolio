@@ -80,6 +80,7 @@ img_me_path = os.path.join(current_dir, "images", "Me.jpg")
 img_VGK_path = os.path.join(current_dir, "images", "NickVGK.jpg")
 img_JW_path = os.path.join(current_dir, "images", "Jaywrightpic.jpg")
 
+img_Thunder_path = os.path.join(current_dir, "images","Thunder-logo.png")
 img_STLBlues_path = os.path.join(current_dir, "images", "STLBlues.png")
 img_EY_path = os.path.join(current_dir, "images", "EYLogo.png")
 img_CBB_path = os.path.join(current_dir, "images", "CBB.png")
@@ -104,6 +105,7 @@ img_VGK=Image.open(img_VGK_path)
 img_JW=Image.open(img_JW_path)
 
 #Images for experience
+img_Thunder=Image.open(img_Thunder_path)
 img_STLBlues=Image.open(img_STLBlues_path)
 img_EY=Image.open(img_EY_path)
 img_CBB=Image.open(img_CBB_path)
@@ -278,6 +280,22 @@ elif choose == "Experience":
 
             
             `Python`  `Excel` `Selenium` `Pandas` `Numpy` `BeautifulSoup4` `Streamlit`
+            """)
+    with st.container():
+        image_column, text_column = st.columns((1,5))
+        with image_column:
+            st.write(" ")
+            st.write(" ")
+            st.write(" ")
+            st.image(img_Thunder)
+        with text_column:
+            st.subheader("Assistant Coach, [Union Thunder](https://www.nhl.com/blues/)")
+            st.write("*Current*")
+            st.markdown("""
+            Serving as the Assistant Coach of the Union Thunder U12 A National Team. Making sure that each player is having fun as at this age, player and character development only happens when the kids are enjoying their time on the ice. Specializing in Goalie Coaching for team as well. 
+
+            
+            `Leadership`  `Communication` `Teaching` `Positivity` `Player Development` `Goalie Specific Training`
             """)
     with st.container():
         image_column, text_column = st.columns((1,5))
