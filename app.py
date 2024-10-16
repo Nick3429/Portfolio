@@ -271,22 +271,6 @@ elif choose == "Experience":
             st.write(" ")
             st.write(" ")
             st.write(" ")
-            st.image(img_STLBlues)
-        with text_column:
-            st.subheader("Analytics Intern, [St.Louis Blues](https://www.nhl.com/blues/)")
-            st.write("*Summer 2024*")
-            st.markdown("""
-            Enhanced the St. Louis Blues’ free agency dashboard by scraping player salary data from CapFriendly, ensuring prospective signings adhered to team salary cap constraints. Created a comprehensive cap management tool using Streamlit, enabling users to construct, save, and evaluate team lineups for salary cap compliance 
-
-            
-            `Python`  `Excel` `Selenium` `Pandas` `Numpy` `BeautifulSoup4` `Streamlit`
-            """)
-    with st.container():
-        image_column, text_column = st.columns((1,5))
-        with image_column:
-            st.write(" ")
-            st.write(" ")
-            st.write(" ")
             st.image(img_Thunder)
         with text_column:
             st.subheader("Assistant Coach, [Union Thunder](https://www.nhl.com/blues/)")
@@ -296,6 +280,22 @@ elif choose == "Experience":
 
             
             `Leadership`  `Communication` `Teaching` `Positivity` `Player Development` `Goalie Specific Training`
+            """)
+    with st.container():
+        image_column, text_column = st.columns((1,5))
+        with image_column:
+            st.write(" ")
+            st.write(" ")
+            st.write(" ")
+            st.image(img_STLBlues)
+        with text_column:
+            st.subheader("Analytics Intern, [St.Louis Blues](https://www.nhl.com/blues/)")
+            st.write("*Summer 2024*")
+            st.markdown("""
+            Enhanced the St. Louis Blues’ free agency dashboard by scraping player salary data from CapFriendly, ensuring prospective signings adhered to team salary cap constraints. Created a comprehensive cap management tool using Streamlit, enabling users to construct, save, and evaluate team lineups for salary cap compliance 
+
+            
+            `Python`  `Excel` `Selenium` `Pandas` `Numpy` `BeautifulSoup4` `Streamlit`
             """)
     with st.container():
         image_column, text_column = st.columns((1,5))
