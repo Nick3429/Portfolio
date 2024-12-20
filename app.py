@@ -276,7 +276,7 @@ elif choose == "Experience":
             st.subheader("Assistant Coach, [Union Thunder](https://www.unionthunderyouthhockey.com/)")
             st.write("*Current*")
             st.markdown("""
-            As an Assistant Coach for the Union Thunder U12 A National Team, I focus on fostering an enjoyable and positive environment where players can develop both their skills and character. At this level, ensuring that the players have fun is essential for their growth. I also specialize in Goalie Coaching, working closely with our goaltenders to support their development on and off the ice.
+            As an Assistant Coach for the Union Thunder U12 A National Team and U10 Black Team, I focus on fostering an enjoyable and positive environment where players can develop both their skills and character. At both of these age levels, ensuring that the players have fun and are learning are essential for their growth. I also specialize in Goalie Coaching, working closely with our goaltenders to support their development on and off the ice.
 
 
             `Leadership`  `Communication` `Teaching` `Positivity` `Player Development` `Goalie Specific Training`
